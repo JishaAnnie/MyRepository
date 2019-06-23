@@ -15,11 +15,11 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class TestBase {
 	public static Properties prop;
 	public static FileInputStream fis;
-	public static WebDriver driver;
+	public  static WebDriver driver;
 	
 	public TestBase() {		
 	 try {
-		fis = new FileInputStream("D:\\Selenium Final\\Learning\\AutomationTesting\\src\\main\\java\\config\\config.properties");
+		fis = new FileInputStream("D:\\Selenium Final\\git\\AutomationTesting\\src\\main\\java\\config\\config.properties");
 		 prop = new Properties();
 		 prop.load(fis);
 	 } catch (FileNotFoundException e) {
@@ -38,11 +38,11 @@ public class TestBase {
 	public static void openBrowser(){
 		String BrowserName = prop.getProperty("browser");
 		if(BrowserName.equals("Chrome")){
-			System.setProperty("webdriver.chrome.driver", "D:\\Selenium Final\\Learning\\AutomationTesting\\Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\Selenium Final\\git\\AutomationTesting\\Driver\\chromedriver.exe");
 			driver = new ChromeDriver();
 			
 		}else if (BrowserName.equals("Firefox")){
-			System.setProperty("webdriver.gecko.driver", "D:\\Selenium Final\\Learning\\AutomationTesting\\Driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "D:\\Selenium Final\\git\\AutomationTesting\\Driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			
 		}else if (BrowserName.equals("Htmlunit")){

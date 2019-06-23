@@ -2,10 +2,11 @@ package driverScript;
 import config.UIActionKeywords;
 import testbase.TestBase;
 import util.ExcelUtil;
+public class DriverExecuter 
+{
 
-public class DriverExecuter {
-
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception 
+	{
 		TestBase b=new TestBase();
 	String sPath ="D:\\Selenium Final\\Learning\\AutomationTesting\\src\\main\\resources\\KeywordActions.xlsx";
 

@@ -15,10 +15,6 @@ public class ExcelUtil {
 	private static XSSFCell Cell;
 	private static XSSFRow Row;
 	
-	
-	
-
-	
 /*	public static void main(String[] args) throws IOException{
 		
 		FileInputStream fis= new FileInputStream("D:\\Selenium Final\\Learning\\AutomationTesting\\src\\test\\resources\\TestData.xlsx");

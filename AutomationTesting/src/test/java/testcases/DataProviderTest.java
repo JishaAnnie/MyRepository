@@ -13,7 +13,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import testbase.TestBase;
-import util.ExcelUtil;
 
 public class DataProviderTest {
 		
@@ -25,12 +24,12 @@ public class DataProviderTest {
 				};
 	}*/
 	//Testdata from excel
-	public Object[][]Authentication() throws Exception{
+	/*public Object[][]Authentication() throws Exception{
 		ExcelUtil.setExcelFile("D:\\Selenium Final\\Learning\\AutomationTesting\\src\\test\\resources\\TestData.xlsx", "TestData1");
 		Object[][] TestObjData= ExcelUtil.getExcelData();
 		return (TestObjData);
 		
-	}
+	}*/
 	
 @Test(dataProvider="Authentication")
 
