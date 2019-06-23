@@ -6,6 +6,8 @@ import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -54,7 +56,8 @@ r.keyPress(KeyEvent.VK_TAB);
 
 r.keyPress(KeyEvent.VK_ENTER);
 Homepage.link_AccountSetting.click();
-TestBase.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+WebDriverWait wait =new WebDriverWait(TestBase.driver,30);
+wait.until(ExpectedConditions.elementToBeClickable(Homepage.link_Logout));
 Homepage.link_Logout.click();
 
 

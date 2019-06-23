@@ -8,7 +8,7 @@ public class HomePage_PF {
 	@FindBy(how =How.XPATH,using = "//div[@id ='userNavigationLabel']")
 	public WebElement link_AccountSetting;
 	
-	@FindBy(how =How.XPATH,using = "//span[cotains(text(),'Log Out')]")
+	@FindBy(how =How.XPATH,using = "//span[contains(text(),'Log Out')]")
 	public WebElement link_Logout;
 	
 	
